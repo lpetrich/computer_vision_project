@@ -1,0 +1,2 @@
+/home/laura/computer_vision/dvo/build/CMakeFiles/cv2_example.dir
+/home/laura/computer_vision/dvo/build/CMakeFiles/depth_tracking.dir
