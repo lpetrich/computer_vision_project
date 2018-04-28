@@ -1,0 +1,8 @@
+prefix=/home/laura/computer_vision/dvo/bin/devel
+
+Name: dvo_core
+Description: Description of dvo_core
+Version: 0.1.0
+Cflags: -I/home/laura/computer_vision/dvo/dvo_core/include -I/opt/ros/indigo/share/sophus/../../include -I/usr/include/eigen3
+Libs: -L/home/laura/computer_vision/dvo/bin/devel/lib -ldvo_core
+Requires: ecl_linear_algebra ecl_time

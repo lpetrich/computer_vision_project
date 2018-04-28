@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/libdvo_core.a  CMakeFiles/dvo_core.dir/src/core/intrinsic_matrix.cpp.o
+/usr/bin/ranlib ../bin/libdvo_core.a

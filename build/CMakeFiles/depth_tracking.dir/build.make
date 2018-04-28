@@ -49,38 +49,39 @@ include CMakeFiles/depth_tracking.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/depth_tracking.dir/flags.make
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o: CMakeFiles/depth_tracking.dir/flags.make
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o: ../src/depth_tracking.cpp
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o: CMakeFiles/depth_tracking.dir/flags.make
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o: ../src/object_tracking/src/object_tracking/depth_tracking.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/laura/computer_vision/dvo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o -c /home/laura/computer_vision/dvo/src/depth_tracking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o -c /home/laura/computer_vision/dvo/src/object_tracking/src/object_tracking/depth_tracking.cpp
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laura/computer_vision/dvo/src/depth_tracking.cpp > CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.i
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laura/computer_vision/dvo/src/object_tracking/src/object_tracking/depth_tracking.cpp > CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.i
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laura/computer_vision/dvo/src/depth_tracking.cpp -o CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.s
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laura/computer_vision/dvo/src/object_tracking/src/object_tracking/depth_tracking.cpp -o CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.s
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.requires:
-.PHONY : CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.requires
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.requires:
+.PHONY : CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.requires
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.provides: CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.requires
-	$(MAKE) -f CMakeFiles/depth_tracking.dir/build.make CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.provides.build
-.PHONY : CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.provides
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.provides: CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.requires
+	$(MAKE) -f CMakeFiles/depth_tracking.dir/build.make CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.provides.build
+.PHONY : CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.provides
 
-CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.provides.build: CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o
+CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.provides.build: CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o
 
 # Object files for target depth_tracking
 depth_tracking_OBJECTS = \
-"CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o"
+"CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o"
 
 # External object files for target depth_tracking
 depth_tracking_EXTERNAL_OBJECTS =
 
-../bin/depth_tracking: CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o
+../bin/depth_tracking: CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o
 ../bin/depth_tracking: CMakeFiles/depth_tracking.dir/build.make
+../bin/depth_tracking: ../bin/devel/lib/libdvo_visualization.so
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
@@ -88,6 +89,85 @@ depth_tracking_EXTERNAL_OBJECTS =
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_system.so
+../bin/depth_tracking: ../bin/devel/lib/libdvo_core.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_linear_algebra.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_formatters.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_type_traits.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_time.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_exceptions.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_errors.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libecl_time_lite.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/librt.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libpcl_ros_filters.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libpcl_ros_io.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libpcl_ros_tf.so
+../bin/depth_tracking: /usr/lib/libpcl_common.so
+../bin/depth_tracking: /usr/lib/libpcl_octree.so
+../bin/depth_tracking: /usr/lib/libpcl_io.so
+../bin/depth_tracking: /usr/lib/libpcl_kdtree.so
+../bin/depth_tracking: /usr/lib/libpcl_search.so
+../bin/depth_tracking: /usr/lib/libpcl_sample_consensus.so
+../bin/depth_tracking: /usr/lib/libpcl_filters.so
+../bin/depth_tracking: /usr/lib/libpcl_features.so
+../bin/depth_tracking: /usr/lib/libpcl_keypoints.so
+../bin/depth_tracking: /usr/lib/libpcl_segmentation.so
+../bin/depth_tracking: /usr/lib/libpcl_visualization.so
+../bin/depth_tracking: /usr/lib/libpcl_outofcore.so
+../bin/depth_tracking: /usr/lib/libpcl_registration.so
+../bin/depth_tracking: /usr/lib/libpcl_recognition.so
+../bin/depth_tracking: /usr/lib/libpcl_surface.so
+../bin/depth_tracking: /usr/lib/libpcl_people.so
+../bin/depth_tracking: /usr/lib/libpcl_tracking.so
+../bin/depth_tracking: /usr/lib/libpcl_apps.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libqhull.so
+../bin/depth_tracking: /usr/lib/libOpenNI.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/depth_tracking: /usr/lib/libvtkCommon.so.5.8.0
+../bin/depth_tracking: /usr/lib/libvtkRendering.so.5.8.0
+../bin/depth_tracking: /usr/lib/libvtkHybrid.so.5.8.0
+../bin/depth_tracking: /usr/lib/libvtkCharts.so.5.8.0
+../bin/depth_tracking: /opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libnodeletlib.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libbondcpp.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libuuid.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libclass_loader.so
+../bin/depth_tracking: /usr/lib/libPocoFoundation.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libdl.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libroslib.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librospack.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librosbag.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librosbag_storage.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libroslz4.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/liblz4.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libtopic_tools.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libtf.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libtf2_ros.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libactionlib.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libmessage_filters.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libtf2.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libroscpp.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librosconsole.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+../bin/depth_tracking: /usr/lib/liblog4cxx.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libroscpp_serialization.so
+../bin/depth_tracking: /opt/ros/indigo/lib/librostime.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libxmlrpcpp.so
+../bin/depth_tracking: /opt/ros/indigo/lib/libcpp_common.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_system.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libpthread.so
+../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
 ../bin/depth_tracking: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
@@ -107,7 +187,7 @@ depth_tracking_EXTERNAL_OBJECTS =
 CMakeFiles/depth_tracking.dir/build: ../bin/depth_tracking
 .PHONY : CMakeFiles/depth_tracking.dir/build
 
-CMakeFiles/depth_tracking.dir/requires: CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o.requires
+CMakeFiles/depth_tracking.dir/requires: CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o.requires
 .PHONY : CMakeFiles/depth_tracking.dir/requires
 
 CMakeFiles/depth_tracking.dir/clean:

@@ -6,25 +6,31 @@
 
 #IncludeRegexTransform: 
 
-../include/cv2_wrapper.h
+../dvo_core/include/dvo/core/datatypes.h
+Eigen/Core
+-
+Eigen/Geometry
+-
+
+../src/object_tracking/include/kinect/cv2_wrapper.h
 opencv2/core/core.hpp
-../include/opencv2/core/core.hpp
+../src/object_tracking/include/kinect/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
-../include/opencv2/highgui/highgui.hpp
+../src/object_tracking/include/kinect/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
 -
 libfreenect.hpp
-../include/libfreenect.hpp
+../src/object_tracking/include/kinect/libfreenect.hpp
 kinect_device.h
 -
 vector
 -
 
-../include/kinect_device.h
+../src/object_tracking/include/kinect/kinect_device.h
 libfreenect.hpp
-../include/libfreenect.hpp
+../src/object_tracking/include/kinect/libfreenect.hpp
 mutex.h
-../include/mutex.h
+../src/object_tracking/include/kinect/mutex.h
 stdio.h
 -
 iostream
@@ -36,9 +42,9 @@ cmath
 vector
 -
 
-../include/libfreenect.hpp
+../src/object_tracking/include/kinect/libfreenect.hpp
 libfreenect.h
-../include/libfreenect.h
+../src/object_tracking/include/kinect/libfreenect.h
 stdexcept
 -
 sstream
@@ -50,7 +56,7 @@ pthread.h
 libusb.h
 -
 
-../include/libusb.h
+../src/object_tracking/include/kinect/libusb.h
 unistd.h
 -
 winsock.h
@@ -60,13 +66,15 @@ stdint.h
 sys/time.h
 -
 
-../include/mutex.h
+../src/object_tracking/include/kinect/mutex.h
 pthread.h
 -
 stdio.h
 -
 
-/home/laura/computer_vision/dvo/src/cv2_example.cpp
+/home/laura/computer_vision/dvo/src/object_tracking/src/examples/cv2_example.cpp
 cv2_wrapper.h
-/home/laura/computer_vision/dvo/src/cv2_wrapper.h
+/home/laura/computer_vision/dvo/src/object_tracking/src/examples/cv2_wrapper.h
+dvo/core/datatypes.h
+-
 

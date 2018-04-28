@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o"
+  "CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o"
   "../bin/cv2_example.pdb"
   "../bin/cv2_example"
 )

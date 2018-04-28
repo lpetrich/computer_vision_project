@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest_main.so -o /home/laura/computer_vision/dvo/bin/libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/laura/computer_vision/dvo/bin/gtest/src -lpthread /home/laura/computer_vision/dvo/bin/libgtest.so -lpthread -Wl,-rpath,/home/laura/computer_vision/dvo/bin/gtest/src:/home/laura/computer_vision/dvo/bin 

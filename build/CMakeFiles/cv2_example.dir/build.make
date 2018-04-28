@@ -49,37 +49,37 @@ include CMakeFiles/cv2_example.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cv2_example.dir/flags.make
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o: CMakeFiles/cv2_example.dir/flags.make
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o: ../src/cv2_example.cpp
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o: CMakeFiles/cv2_example.dir/flags.make
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o: ../src/object_tracking/src/examples/cv2_example.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/laura/computer_vision/dvo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o -c /home/laura/computer_vision/dvo/src/cv2_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o -c /home/laura/computer_vision/dvo/src/object_tracking/src/examples/cv2_example.cpp
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cv2_example.dir/src/cv2_example.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laura/computer_vision/dvo/src/cv2_example.cpp > CMakeFiles/cv2_example.dir/src/cv2_example.cpp.i
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/laura/computer_vision/dvo/src/object_tracking/src/examples/cv2_example.cpp > CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.i
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cv2_example.dir/src/cv2_example.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laura/computer_vision/dvo/src/cv2_example.cpp -o CMakeFiles/cv2_example.dir/src/cv2_example.cpp.s
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/laura/computer_vision/dvo/src/object_tracking/src/examples/cv2_example.cpp -o CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.s
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.requires:
-.PHONY : CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.requires
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.requires:
+.PHONY : CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.requires
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.provides: CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cv2_example.dir/build.make CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.provides.build
-.PHONY : CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.provides
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.provides: CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cv2_example.dir/build.make CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.provides.build
+.PHONY : CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.provides
 
-CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.provides.build: CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o
+CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.provides.build: CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o
 
 # Object files for target cv2_example
 cv2_example_OBJECTS = \
-"CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o"
+"CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o"
 
 # External object files for target cv2_example
 cv2_example_EXTERNAL_OBJECTS =
 
-../bin/cv2_example: CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o
+../bin/cv2_example: CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o
 ../bin/cv2_example: CMakeFiles/cv2_example.dir/build.make
 ../bin/cv2_example: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 ../bin/cv2_example: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
@@ -107,7 +107,7 @@ cv2_example_EXTERNAL_OBJECTS =
 CMakeFiles/cv2_example.dir/build: ../bin/cv2_example
 .PHONY : CMakeFiles/cv2_example.dir/build
 
-CMakeFiles/cv2_example.dir/requires: CMakeFiles/cv2_example.dir/src/cv2_example.cpp.o.requires
+CMakeFiles/cv2_example.dir/requires: CMakeFiles/cv2_example.dir/src/object_tracking/src/examples/cv2_example.cpp.o.requires
 .PHONY : CMakeFiles/cv2_example.dir/requires
 
 CMakeFiles/cv2_example.dir/clean:

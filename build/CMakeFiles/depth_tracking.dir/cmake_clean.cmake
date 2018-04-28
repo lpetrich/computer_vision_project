@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/depth_tracking.dir/src/depth_tracking.cpp.o"
+  "CMakeFiles/depth_tracking.dir/src/object_tracking/src/object_tracking/depth_tracking.cpp.o"
   "../bin/depth_tracking.pdb"
   "../bin/depth_tracking"
 )

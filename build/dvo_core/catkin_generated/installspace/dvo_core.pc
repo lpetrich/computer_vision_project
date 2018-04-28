@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: dvo_core
+Description: Description of dvo_core
+Version: 0.1.0
+Cflags: -I/usr/local/include -I/opt/ros/indigo/share/sophus/../../include -I/usr/include/eigen3
+Libs: -L/usr/local/lib -ldvo_core
+Requires: ecl_linear_algebra ecl_time
