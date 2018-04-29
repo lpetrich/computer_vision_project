@@ -11,7 +11,7 @@
 #include <boost/thread.hpp>
 #include <Eigen/Core>
 #include <Eigen/Geometry>
-
+#include <ctime>
 /* global variables /**/
 CV2Wrapper wrapper_;
 boost::mutex tracker_mutex_;
@@ -43,7 +43,8 @@ void shutdown()
 
 void handleImages(cv::Mat rgb_in, cv::Mat depth_in)
 {
-	boost::mutex::scoped_lock lock(tracker_mutex_);
+    clock_t begin = clock();
+  	boost::mutex::scoped_lock lock(tracker_mutex_);
 	// cv::Mat intensity, depth;
 	if(rgb_in.channels() == 3)
 	{
@@ -78,7 +79,10 @@ void handleImages(cv::Mat rgb_in, cv::Mat depth_in)
 		reference.swap(current);
 		std::cout << "matching failed";
 	}
-	std::cout << "Current transform: \n" << transform.matrix() << "\n";
+	std::cout << "\nCurrent transform: \n" << transform.matrix() << "\n";
+  	clock_t end = std::clock();
+	double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+	std::cout << "Time per frame (sec): " << elapsed_secs << "\n";	
 }
 
 void drawPatch(cv::Mat& frame) 
@@ -214,15 +218,15 @@ void mouseHandler(int mouse_event, int x, int y, int flags, void* param)
 void mainLoop()
 {
 	while (!wrapper_.checkState()) {
-		int key = cv::waitKey(5);
+		int key = cv::waitKey(10);
 		if (key != -1) {
 			wrapper_.checkKey(key);
 		}
 		wrapper_.updateDevice();
 		cv::Mat image(wrapper_.getImageMat());
 		cv::Mat depth(wrapper_.getDepthMat());
-		current_image = image.clone();
-		current_depth = depth.clone();
+		// current_image = image.clone();
+		// current_depth = depth.clone();
 		if (wrapper_.showImage())
 		{
 			if (uv.size() == 4)
@@ -246,6 +250,14 @@ void mainLoop()
 void initialize()
 {
 	wrapper_.initializeDevice();
+	fx = 521.72;
+	fy = 523.37;
+	cx = 309.75;
+	cy = 256.13;
+	std::cout << "\nINTRINSICS:\nfx: " << fx << "\n";
+	std::cout << "fy: " << fy << "\n";
+	std::cout << "cx: " << cx << "\n";
+	std::cout << "cy: " << cy << "\n";
 	wrapper_.userMenu();
 	window_image = "IMAGE";
 	window_depth = "DEPTH";
@@ -253,10 +265,10 @@ void initialize()
 	cv::namedWindow(window_depth);
 	cv::setMouseCallback(window_image, mouseHandler);
 	cv::startWindowThread();
-	fx = 521.72;
-	fy = 523.37;
-	cx = 309.75;
-	cy = 256.13;
+	// fx = 521.72;
+	// fy = 523.37;
+	// cx = 309.75;
+	// cy = 256.13;
 	intrinsics = dvo::core::IntrinsicMatrix::create(fx, fy, cx, cy);
 	cfg = dvo::DenseTracker::getDefaultConfig();
 	cfg.UseWeighting = false;

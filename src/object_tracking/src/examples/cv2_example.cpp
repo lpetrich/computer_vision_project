@@ -11,6 +11,7 @@ int main()
 	while (!wr.checkState()) {
 		int key = cv::waitKey(5);
 		if (key != -1) {
+			std::cout << "Key pressed: " << (char)key << "\n";
 			wr.checkKey(key);
 		}
 		wr.updateDevice();
