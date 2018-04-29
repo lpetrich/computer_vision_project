@@ -1,4 +1,6 @@
 CMPUT 428 Final Project by Laura Petrich
 =======
-DENSE VISUAL ODOMETRY (DVO) for the Kinect Camera
+Dense Visual Odometry (DVO) adaptation for the Kinect Camera
 
+ROS indigo adaptation of DVO:
+https://github.com/lpetrich/dvo
